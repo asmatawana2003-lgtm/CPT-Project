@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Food Bill Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Food Bill Calculator</h1>
+
+    <br />
+    <br />
+    <div id="form-div">
+      <form id="myForm">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter Your name" id="name" />
+
+        <div class="inputdiv">
+          <div>
+            <label>Food 1</label>
+            <select id="chooseFood1" style="width: 150px">
+              <option value="" selected>Choose Food</option>
+              <option value="Beef Biryani">Beef Biryani</option>
+              <option value="Mutton Biryani">Mutton Biryani</option>
+              <option value="Chicken Biryani">Chicken Biryani</option>
+              <option value="Veg Biryani">Veg Biryani</option>
+              <option value="Faluda">Faluda</option>
+              <option value="Beef">Beef</option>
+              <option value="Mutton">Mutton</option>
+              <option value="Chicken">Chicken</option>
+              <option value="Cake">Cake</option>
+              <option value="Sweets">Sweets</option>
+            </select>
+          </div>
+          <div>
+            <label>Quantity</label>
+            <input type="number" placeholder="Enter Quantity" id="quantity1" />
+          </div>
+          <div>
+            <label>Unit Price</label>
+            <input type="number" placeholder="Enter Price" id="price1" />
+          </div>
+        </div>
+
+        <div class="inputdiv">
+          <div>
+            <label>Food 2</label>
+            <select id="chooseFood2" style="width: 150px">
+              <option value="" selected>Choose Food</option>
+              <option value="Burger">Burger</option>
+              <option value="Pizza">Pizza</option>
+              <option value="Pasta">Pasta</option>
+              <option value="Chicken Fry">Chicken Fry</option>
+              <option value="French Fry">French Fry</option>
+              <option value="Muffin">Muffin</option>
+              <option value="Coke">Coke</option>
+              <option value="Pepsi">Pepsi</option>
+            </select>
+          </div>
+          <div>
+            <label>Quantity</label>
+            <input type="number" placeholder="Enter Quantity" id="quantity2" />
+          </div>
+          <div>
+            <label>Unit Price</label>
+            <input type="number" placeholder="Enter Price" id="price2" />
+          </div>
+        </div>
+
+        <div>
+          <label>Discount(%)</label>
+          <input
+            type="number"
+            placeholder="Enter Discount Percentage"
+            id="discount"
+          />
+        </div>
+
+        <div class="inputdiv">
+          <input type="submit" value="Calculate Bill" id="submitBtn" />
+          <input type="reset" value="Reset" id="resetBtn" />
+        </div>
+      </form>
+
+      <div
+        style="
+          width: 450px;
+          height: 300px;
+          border: 2px solid black;
+          border-radius: 5px;
+          background-color: #ececec;
+        "
+      >
+        <p
+          style="
+            font-weight: bold;
+            font-size: 21px;
+            margin-top: 0px;
+            background-color: #142d4c;
+            color: white;
+            padding: 5px;
+            text-align: center;
+          "
+        >
+          Your Order Details
+        </p>
+        <p
+          id="output"
+          style="font-size: 17px; padding-left: 10px; margin-top: 5px"
+        ></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

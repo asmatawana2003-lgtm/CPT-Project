@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://authenticroyal.com/wp-content/uploads/2024/05/How-to-Make-Chicken-Biryani-Video.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 0, 31, 0.6),
+    rgba(61, 0, 92, 0.6),
+    rgba(94, 43, 151, 0.6)
+  );
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 26px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+form {
+  background: #e7eaf6;
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 40%;
+  border: 1px solid #999;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea,
+option {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #666;
+}
+
+select {
+  font-weight: bold;
+  width: 100%;
+  background-color: white;
+}
+
+input[type="submit"] {
+  background-color: #0055aa;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  background-color: #003366;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  background-color: #f96d00;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+input[type="reset"]:hover {
+  background-color: #e8630a;
+  cursor: pointer;
+}
+
+#form-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.inputdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
